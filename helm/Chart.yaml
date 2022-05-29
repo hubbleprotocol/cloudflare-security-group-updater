@@ -1,0 +1,9 @@
+apiVersion: v2
+name: cloudflare-security-group-updater
+description: A Helm chart for Cloudflare Security Group Updater
+type: application
+version: 0.0.1
+dependencies:
+  - name: cronjob-base-chart
+    version: 0.0.1-SNAPSHOT-1653879722
+    repository: "@hubbleprotocol"

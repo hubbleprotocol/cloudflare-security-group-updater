@@ -1,0 +1,6 @@
+dependencies:
+- name: cronjob-base-chart
+  repository: s3://helmrepository.build.hubbleprotocol.io
+  version: 0.0.1-SNAPSHOT-1653879722
+digest: sha256:e5b637cdcfc6a2bc69a9a0b047078ac0bb5301029e900b4315390fd268b10d7d
+generated: "2022-05-30T04:02:35.12313157+01:00"

@@ -1,0 +1,8 @@
+venv
+helm/charts
+.idea
+*.tgz
+logs
+dist
+**/*.egg-info
+build

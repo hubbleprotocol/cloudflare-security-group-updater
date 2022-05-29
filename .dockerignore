@@ -1,0 +1,9 @@
+.github
+helm
+.idea
+.gitignore
+.env
+.env.*
+Dockerfile
+venv
+**/*.egg-info
