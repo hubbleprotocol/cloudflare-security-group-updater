@@ -1,0 +1,27 @@
+cronjob-base-chart:
+  applicationName: cloudflare-security-group-updater
+  image:
+    repository: hubbleprotocol/cloudflare-security-group-updater
+    tag: "latest"
+    imagePullPolicy: Always
+  jobs:
+    - name: update-cloudflare-ingress-security-groups
+      schedule: "*/5 * * * *"
+#      envVars:
+#        - name: SECURITY_GROUP_ID
+#          value: "sg-123..."
+#        - name: AWS_DEFAULT_REGION
+#          value: "eu-west-1"
+#        - name: AWS_ACCESS_KEY_ID
+#          valueFrom:
+#            secretKeyRef:
+#              name: cloudflare-security-group-updater-secret
+#              key: AWS_ACCESS_KEY_ID
+#        - name: AWS_ACCESS_KEY_ID
+#          valueFrom:
+#            secretKeyRef:
+#              name: cloudflare-security-group-updater-secret
+#              key: AWS_ACCESS_KEY_ID
+#  secrets:
+#    AWS_ACCESS_KEY_ID:
+#    AWS_SECRET_ACCESS_KEY:
